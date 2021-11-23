@@ -22,3 +22,4 @@
 |`USR_TIPO`|`Integer`|**Required**. Tipo a ser cadastrado, OBS: 1 para Administrador, 2 para funcionário|
 |`USR_NOME`|`string`|**Required**. Nome a ser cadastrada|
 
+OBS: Created_at e Updated_at são gerados automaticament
