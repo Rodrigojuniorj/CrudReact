@@ -9,7 +9,7 @@
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `/cliente/` | `string` | **Required**. Retorna todos os clientes cadastrados OBS: passar -1 para recuperar todos os registros, ou o id do cliente |
+| `/cliente/` | `Integer` | **Required**. Retorna todos os clientes cadastrados OBS: passar -1 para recuperar todos os registros, ou o id do cliente |
 
 ```http
   Post /cadastro
@@ -22,4 +22,24 @@
 |`USR_TIPO`|`Integer`|**Required**. Tipo a ser cadastrado, OBS: 1 para Administrador, 2 para funcionário|
 |`USR_NOME`|`string`|**Required**. Nome a ser cadastrada|
 
-OBS: Created_at e Updated_at são gerados automaticament
+OBS: Created_at e Updated_at são gerados automaticamente
+
+```http
+  Post /update
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `USR_EMAIL`      | `string` | **Required**. Email a ser cadastrado |
+| `USR_SENHA`|`string`|**Required**. Senha a ser cadastrada|
+|`USR_TIPO`|`Integer`|**Required**. Tipo a ser cadastrado, OBS: 1 para Administrador, 2 para funcionário|
+|`USR_NOME`|`string`|**Required**. Nome a ser cadastrada|
+
+```http
+  GET /delete/${URS_ID}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `/cliente/` | `Integer` | **Required**. Apaga o cliente selecionado|
+
