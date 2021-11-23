@@ -19,6 +19,6 @@
 | :-------- | :------- | :-------------------------------- |
 | `USR_EMAIL`      | `string` | **Required**. Email a ser cadastrado |
 | `USR_SENHA`|`string`|**Required**. Senha a ser cadastrada
-
+|`USR_TIPO`|`Integer`|**Required**. Tipo a ser cadastrado, OBS: 1 para Administrador, 2 para funcionário|
 
 
