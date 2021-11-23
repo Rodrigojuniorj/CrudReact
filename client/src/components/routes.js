@@ -24,8 +24,8 @@ function Rotas(){
     return(
         <BrowserRouter>
             <Routes >
-                {/**Rota Cliente */}
-                <Route path="/" element={<Home/>}  />
+                {/**Rota Cliente <Route path="/" element={<Home/>*/}
+                <Route path="/" element={<Dasboard/>}  />
                 <Route path="/produtos/:idProduto" element={<ProdutoDetails />} />
 
                 {/**Rota Administrador */}

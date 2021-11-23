@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 
 exports.databaseCredentials = {
-    host: "localhost",
+    host: "dbrodrigo.cu1mslwbrnct.sa-east-1.rds.amazonaws.com",
     database: "cliente",
-    user: "rodrigo",
+    user: "rodrigojuniorj",
     password: "roro17JU",
     dialect: "mysql"
 };
