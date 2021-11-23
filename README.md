@@ -1,6 +1,9 @@
 
 ## API Projeto Integrador
 
+## Authors
+- [@Rodrigojuniorj] (https://www.github.com/Rodrigojuniorj)
+
 #### Get all items
 
 ```http
