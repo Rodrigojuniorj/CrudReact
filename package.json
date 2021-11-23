@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scrip": "node server.js",
+    "start": "serve-build",
     "dev": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
