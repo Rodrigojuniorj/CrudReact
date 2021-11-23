@@ -26,9 +26,21 @@ exports.post = async(req, res, next) => {
                 message: 'Campo Senha é obrigatório',
             });
         }
+        if(req.body.USR_TIPO == ''){
+            res.status(400).send({
+                message: 'Campo Tipo é obrigatório',
+            });
+        }
+        if(req.body.USR_NOME == ''){
+            res.status(400).send({
+                message: 'Campo Nome é obrigatório',
+            });
+        }
         else{
             var data = await repository.create({
-                USR_EMAIL:   req.body.USR_EMAIL   ,
+                USR_EMAIL:   req.body.USR_EMAIL,
+                USR_TIPO:   req.body.USR_TIPO,
+                USR_NOME:   req.body.USR_NOME,
                 USR_SENHA:   md5(req.body.USR_SENHA) 
             });
             res.status(201).send({
@@ -70,9 +82,21 @@ exports.update = async(req, res, next) => {
                 message: 'Campo Senha é obrigatório',
             });
         }
+        if(req.body.USR_TIPO == ''){
+            res.status(400).send({
+                message: 'Campo Tipo é obrigatório',
+            });
+        }
+        if(req.body.USR_NOME == ''){
+            res.status(400).send({
+                message: 'Campo Nome é obrigatório',
+            });
+        }
         else{
             var data = await repository.put(req.body.USR_ID, {
                 USR_EMAIL:   req.body.USR_EMAIL,
+                USR_TIPO:   req.body.USR_TIPO,
+                USR_NOME:   req.body.USR_NOME,
                 USR_SENHA:   md5(req.body.USR_SENHA) 
             });
             res.status(201).send({

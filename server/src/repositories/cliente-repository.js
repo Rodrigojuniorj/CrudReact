@@ -3,7 +3,6 @@
 const mydb = require('../shared/connections');
 const Usuario = mydb.Usuario;
 
-//pega dados do banco
 exports.get = async(codigo) => {
     var res;
     if(codigo == -1){

@@ -36,7 +36,7 @@ function Rotas(){
 
                 <Route path="/admin/usuarios" element={<Usuarios/>} />
                 <Route path="/admin/usuarios/cadastrar"  element={<UsuarioCadastrar/>} />
-                <Route path="/admin/usuarios/editar/:idProduto" element={<UsuarioEditar/>} />
+                <Route path="/admin/usuarios/editar/:idUsuario" element={<UsuarioEditar/>} />
             </Routes>
         </BrowserRouter>
     )
